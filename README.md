@@ -1,4 +1,4 @@
-# Nous — Clube de Servers
+# UnasCraft — Clube de Servers
 
 ![Status](https://img.shields.io/badge/status-em%20implantação-yellow)
 ![Licença](https://img.shields.io/badge/licença-open%20source-blue)
@@ -6,11 +6,11 @@
 
 > **Missão:** Criar o primeiro laboratório de infraestrutura open source gerido por estudantes — inicialmente gratuito, isolado e escalável — que sirva de referência para outros campi UNASP, outras universidades, centros universitários e faculdades, não só adventistas, mas também confessionais ou não.
 >
-> **Visão:** Em 2 anos, tempo esperado para a formação da primeira turma de Engenharia da Computação do Campus-EC, o Nous será um hub de projetos reais que enriquecem o currículo dos membros e geram publicações e palestras.
+> **Visão:** Em 2 anos, tempo esperado para a formação da primeira turma de Engenharia da Computação do Campus-EC, o UnasCraft será um hub de projetos reais que enriquecem o currículo dos membros e geram publicações e palestras.
 
 ---
 
-Este é o repositório inicial e oficial do **"Clube de Servers"**, apelidado de **Nous** — homenagem tanto à [filosofia grega](https://en.wikipedia.org/wiki/Nous) quanto aos diversos personagens inspirados no conceito, como [Nous, A Erudição](https://honkai-star-rail.fandom.com/wiki/Nous).
+Este é o repositório inicial e oficial do **"Clube de Servers"**, apelidado de **UnasCraft**.
 
 A iniciativa surgiu no contexto do Projeto de Extensão e Projeto Integrador das turmas de 5º Semestre em 2026, que consistia na criação de uma automação para hortas. Um servidor para captar dados foi uma das soluções discutidas, e daí nasceu a ideia de estruturar uma infraestrutura permanente gerida pelos próprios alunos.
 
@@ -18,7 +18,7 @@ A iniciativa surgiu no contexto do Projeto de Extensão e Projeto Integrador das
 
 ## Propósito
 
-Dentre os objetivos do Nous encontram-se:
+Dentre os objetivos do UnasCraft encontram-se:
 
 - **Capacitação de Estudantes:** Através da construção e operação de infraestrutura real, com conhecimento open source e democrático — auxiliando aqueles que pretendem trabalhar futuramente com DevOps, SRE ou SysAdmin (Proxmox/K8s).
 - **Sandbox para TCCs:** Redução da evasão e aumento da qualidade dos projetos finais ao oferecer hospedagem gratuita interna para bancos de dados e APIs.
@@ -50,7 +50,7 @@ Para entrar em contato com a equipe atual, procure os responsáveis pelo projeto
 
 ---
 
-## Cronograma Consolidado – Nous | Clube de Servers
+## Cronograma Consolidado – UnasCraft | Clube de Servers
 
 > Visão unificada dos workshops, roadmap técnico e fases de implementação (12 meses).
 
@@ -127,7 +127,7 @@ Para entrar em contato com a equipe atual, procure os responsáveis pelo projeto
 
 ## E depois dos 12 meses?
 
-O cronograma cobre o primeiro ano de operação do Nous. No segundo ano — coincidindo com a formatura da primeira turma de Engenharia da Computação do Campus-EC — a expectativa é que o clube esteja maduro o suficiente para:
+O cronograma cobre o primeiro ano de operação do UnasCraft. No segundo ano — coincidindo com a formatura da primeira turma de Engenharia da Computação do Campus-EC — a expectativa é que o clube esteja maduro o suficiente para:
 
 - Servir de referência para outros campi do UNASP e instituições externas;
 - Publicar estudos de caso e relatos de experiência em eventos técnicos e acadêmicos;
