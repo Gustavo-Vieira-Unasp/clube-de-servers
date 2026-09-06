@@ -1,100 +1,104 @@
-# BACKLOG.md — UnasCraft | Clube de Servers
+# Backlog | UnasCraft: Clube de Servers
 
-> Backlog geral do projeto, organizado por épico e fase de implementação. Itens são rastreados como issues no GitLab e priorizados conforme MoSCoW (ver `PRIORITY_MOSCOW.md`).
-
----
-
-## Épico 0 — Preparação Institucional
-
-| ID | Item | Responsável | Status |
-| ---- | ------ | ------------- | -------- |
-| B-001 | Inventário completo de hardware legado disponível | TBD | 🔲 A fazer |
-| B-002 | Reunião com TI para aprovação de VLANs dedicadas | TBD | 🔲 A fazer |
-| B-003 | Definir localização física do servidor (sala, rack, energia) | TBD | 🔲 A fazer |
-| B-004 | Criar repositório GitLab interno com estrutura de pastas | TBD | 🔲 A fazer |
-| B-005 | Documentar topologia de rede inicial (Draw.io) | TBD | 🔲 A fazer |
-| B-006 | Mapear custos operacionais (energia, domínio, cabos, mídias) | TBD | 🔲 A fazer |
-| B-007 | Definir canal de comunicação oficial do clube | TBD | 🔲 A fazer |
+> Itens por épico. MoSCoW resumido em [operacao.md](operacao.md). Status: Fase 0.
 
 ---
 
-## Épico 1 — Infraestrutura Base
+## Épico 0 - Preparação institucional
 
-| ID | Item | Responsável | Status |
-| ---- | ------ | ------------- | -------- |
-| B-008 | Instalar Proxmox VE nos 3 nodes | TBD | 🔲 A fazer |
-| B-009 | Configurar cluster Proxmox com HA | TBD | 🔲 A fazer |
-| B-010 | Configurar VLANs (Management, Student, Storage, DMZ) | TBD | 🔲 A fazer |
-| B-011 | Instalar e configurar OPNsense como firewall de borda | TBD | 🔲 A fazer |
-| B-012 | Configurar NAS com OpenMediaVault ou TrueNAS | TBD | 🔲 A fazer |
-| B-013 | Implantar Authentik ou Keycloak para identidade unificada | TBD | 🔲 A fazer |
-| B-014 | Criar primeira VM de teste e validar live migration | TBD | 🔲 A fazer |
-| B-015 | Documentar topologia final e regras de firewall | TBD | 🔲 A fazer |
+| ID | Item | Responsável | Status | MoSCoW |
+| -- | ---- | ----------- | ------ | ------ |
+| B-001 | Inventário de hardware legado (meta: 4-6 PCs; mín. 3 nodes) | TBD | 🔲 A fazer | Must |
+| B-002 | Pedido / reunião com TI (VLAN, sala, VPN); texto em [solicitacao-ti.md](solicitacao-ti.md) | TBD | 🔲 A fazer | Must |
+| B-003 | Definir localização física (sala, rack, energia) | TBD | 🔲 A fazer | Must |
+| B-004 | Git interno no lab (Gitea por padrão); até lá usar este GitHub | TBD | 🔲 A fazer | Must* |
+| B-005 | Documentar topologia de rede (Draw.io) | TBD | 🔲 A fazer | Should |
+| B-006 | Mapear custos operacionais (energia, cabos, mídias) | TBD | 🔲 A fazer | Must |
+| B-007 | Definir canal de comunicação oficial do clube | TBD | 🔲 A fazer | Could |
 
----
-
-## Épico 2 — Self-Hosting de Serviços Educacionais
-
-| ID | Item | Responsável | Status |
-| ---- | ------ | ------------- | -------- |
-| B-016 | Deploy do Nextcloud para armazenamento de projetos e TCCs | TBD | 🔲 A fazer |
-| B-017 | Deploy do BookStack como wiki do clube | TBD | 🔲 A fazer |
-| B-018 | Deploy do Gitea ou GitLab CE como repositório interno | TBD | 🔲 A fazer |
-| B-019 | Configurar DNS interno com domínio local | TBD | 🔲 A fazer |
-| B-020 | Deploy do Grafana + Prometheus para monitoramento | TBD | 🔲 A fazer |
-| B-021 | Deploy do JupyterHub para uso em aulas e projetos | TBD | 🔲 A fazer |
-| B-022 | Onboarding de 20 alunos no sandbox | TBD | 🔲 A fazer |
+\*Must quando o lab existir; neste repositório o GitHub já cobre a Fase 0.
 
 ---
 
-## Épico 3 — Pipeline DevOps & CI/CD
+## Épico 1 - Infraestrutura base
 
-| ID | Item | Responsável | Status |
-| ---- | ------ | ------------- | -------- |
-| B-023 | Configurar GitLab CE com runners em containers LXC | TBD | 🔲 A fazer |
-| B-024 | Criar pipelines de CI/CD com Terraform + Ansible | TBD | 🔲 A fazer |
-| B-025 | Implementar fluxo GitOps para provisionamento de serviços | TBD | 🔲 A fazer |
-| B-026 | Garantir que todo novo serviço seja deployado via Git push | TBD | 🔲 A fazer |
-| B-027 | Documentar processo de contribuição e deploy para membros | TBD | 🔲 A fazer |
-
----
-
-## Épico 4 — Segurança, Monitoramento Avançado & Expansão
-
-| ID | Item | Responsável | Status |
-| ---- | ------ | ------------- | -------- |
-| B-028 | Configurar WireGuard VPN para acesso externo seguro | TBD | 🔲 A fazer |
-| B-029 | Configurar Fail2Ban nas superfícies expostas | TBD | 🔲 A fazer |
-| B-030 | Configurar Proxmox Backup Server com backups automáticos | TBD | 🔲 A fazer |
-| B-031 | Configurar Alertmanager com notificações para a equipe | TBD | 🔲 A fazer |
-| B-032 | Realizar Workshop "Red Team" com ataques simulados no sandbox | TBD | 🔲 A fazer |
-| B-033 | Implementar rotação formal de "sysadmins do mês" | TBD | 🔲 A fazer |
-| B-034 | Produzir documentação completa para replicação em outros campi | TBD | 🔲 A fazer |
+| ID | Item | Responsável | Status | MoSCoW |
+| -- | ---- | ----------- | ------ | ------ |
+| B-008 | Instalar Proxmox VE nos nodes | TBD | 🔲 A fazer | Must |
+| B-009 | Configurar HA no cluster Proxmox | TBD | 🔲 A fazer | Should |
+| B-010 | Configurar VLANs (Management, Student, Storage, DMZ) | TBD | 🔲 A fazer | Must |
+| B-011 | Instalar e configurar OPNsense na borda | TBD | 🔲 A fazer | Must |
+| B-012 | Configurar NAS (OpenMediaVault ou TrueNAS) | TBD | 🔲 A fazer | Must |
+| B-013 | Implantar Authentik ou Keycloak | TBD | 🔲 A fazer | Should |
+| B-014 | Criar primeira VM de teste | TBD | 🔲 A fazer | Must |
+| B-015 | Documentar topologia final e regras de firewall | TBD | 🔲 A fazer | Should |
 
 ---
 
-## Épico 5 — Formação & Comunidade
+## Épico 2 - Self-hosting educacional
 
-| ID | Item | Responsável | Status |
-| ---- | ------ | ------------- | -------- |
-| B-035 | Executar Workshop de Onboarding 1 (Ressurreição de Hardware) | TBD | 🔲 A fazer |
-| B-036 | Executar Workshop de Onboarding 2 (Docker 101) | TBD | 🔲 A fazer |
-| B-037 | Executar Workshop de Onboarding 3 (Redes e Segurança) | TBD | 🔲 A fazer |
-| B-038 | Executar Workshop de Onboarding 4 (Infra as Code) | TBD | 🔲 A fazer |
-| B-039 | Executar Trilha Principal — Workshop 1 (Linux Server) | TBD | 🔲 A fazer |
-| B-040 | Executar Trilha Principal — Workshop 2 (Redes & VLANs) | TBD | 🔲 A fazer |
-| B-041 | Executar Trilha Principal — Workshop 3 (Proxmox VE) | TBD | 🔲 A fazer |
-| B-042 | Executar Trilha Principal — Workshop 4 (Contêineres & Docker) | TBD | 🔲 A fazer |
-| B-043 | Executar Trilha Principal — Workshop 5 (Self-Hosting Educacional) | TBD | 🔲 A fazer |
-| B-044 | Executar Trilha Principal — Workshop 6 (CI/CD, Monitoring & Segurança) | TBD | 🔲 A fazer |
-| B-045 | Emitir certificados de horas complementares ao fim de cada onboarding | TBD | 🔲 A fazer |
+| ID | Item | Responsável | Status | MoSCoW |
+| -- | ---- | ----------- | ------ | ------ |
+| B-016 | Deploy Nextcloud | TBD | 🔲 A fazer | Should |
+| B-017 | Deploy BookStack | TBD | 🔲 A fazer | Should |
+| B-018 | Deploy Gitea (Git interno) | TBD | 🔲 A fazer | Should |
+| B-019 | DNS interno | TBD | 🔲 A fazer | Should |
+| B-020 | Grafana + Prometheus | TBD | 🔲 A fazer | Should |
+| B-021 | JupyterHub | TBD | 🔲 A fazer | Could |
+| B-022 | Onboarding de ~20 alunos no sandbox | TBD | 🔲 A fazer | Could |
 
 ---
 
-## Legenda de Status
+## Épico 3 - DevOps e CI/CD
+
+| ID | Item | Responsável | Status | MoSCoW |
+| -- | ---- | ----------- | ------ | ------ |
+| B-023 | CI/runners leves no Git interno | TBD | 🔲 A fazer | Should |
+| B-024 | Pipelines com Terraform + Ansible | TBD | 🔲 A fazer | Could |
+| B-025 | Fluxo GitOps para provisionamento | TBD | 🔲 A fazer | Could |
+| B-026 | Novos serviços deployados via Git push | TBD | 🔲 A fazer | Could |
+| B-027 | Documentar contribuição e deploy | TBD | 🔲 A fazer | Should |
+
+---
+
+## Épico 4 - Segurança, monitoramento e estabilidade
+
+| ID | Item | Responsável | Status | MoSCoW |
+| -- | ---- | ----------- | ------ | ------ |
+| B-028 | WireGuard VPN (conforme TI) | TBD | 🔲 A fazer | Should |
+| B-029 | Fail2Ban nas superfícies expostas | TBD | 🔲 A fazer | Could |
+| B-030 | Proxmox Backup Server | TBD | 🔲 A fazer | Should |
+| B-031 | Alertmanager | TBD | 🔲 A fazer | Could |
+| B-032 | Workshop Red Team (só com lab maduro e acordo da TI) | TBD | 🔲 A fazer | Won't* |
+| B-033 | Rotação formal de sysadmins do mês | TBD | 🔲 A fazer | Should |
+| B-034 | Docs de replicação para outros campi | TBD | 🔲 A fazer | Won't (ano 2) |
+
+\*Reconsiderar no fim da Fase 4 se fizer sentido; não é meta dos 12 meses iniciais.
+
+---
+
+## Épico 5 - Formação e comunidade
+
+| ID | Item | Responsável | Status | MoSCoW |
+| -- | ---- | ----------- | ------ | ------ |
+| B-035 | Onboarding 1: ressurreição de hardware | TBD | 🔲 A fazer | Should |
+| B-036 | Onboarding 2: Docker 101 | TBD | 🔲 A fazer | Should |
+| B-037 | Onboarding 3: redes e segurança | TBD | 🔲 A fazer | Could |
+| B-038 | Onboarding 4: Infra as Code | TBD | 🔲 A fazer | Could |
+| B-039 | Trilha: Workshop 1 (Linux Server) | TBD | 🔲 A fazer | Should |
+| B-040 | Trilha: Workshop 2 (Redes e VLANs) | TBD | 🔲 A fazer | Should |
+| B-041 | Trilha: Workshop 3 (Proxmox VE) | TBD | 🔲 A fazer | Should |
+| B-042 | Trilha: Workshop 4 (Contêineres e Docker) | TBD | 🔲 A fazer | Could |
+| B-043 | Trilha: Workshop 5 (Self-hosting) | TBD | 🔲 A fazer | Could |
+| B-044 | Trilha: Workshop 6 (CI/CD, monitoring e segurança) | TBD | 🔲 A fazer | Could |
+| B-045 | Certificados de horas complementares | TBD | 🔲 A fazer | Could |
+
+---
+
+## Legenda de status
 
 | Ícone | Significado |
-| ------- | ------------- |
+| ----- | ----------- |
 | 🔲 A fazer | Não iniciado |
 | 🔄 Em andamento | Em progresso |
 | ✅ Concluído | Finalizado e validado |
